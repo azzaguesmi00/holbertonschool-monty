@@ -40,6 +40,6 @@ typedef struct instruction_s
 
 void push(stack_t **stack, unsigned int line_number, int value);
 void pall(stack_t **stack, unsigned int line_number);
-'(-	a)'
+
 
 #endif
