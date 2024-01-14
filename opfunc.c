@@ -38,7 +38,7 @@ void find_func(char *opc, char *val, int l_n, int tamrof)
 }
 
 /**
- * call_fun - Calls the required function.
+ * call_funk - Calls the required function.
  * @funk: Pointer to the function that is about to be called.
  * @string: string representing the opcode.
  * @val: string representing a numeric value.
@@ -46,7 +46,7 @@ void find_func(char *opc, char *val, int l_n, int tamrof)
  * @tamrof: Format specifier. If 0 Nodes will be entered as a stack.
  * if 1 nodes will be entered as a queue.
  */
-void call_fun(op_func funk, char *string, char *val, int l_n, int tamrof)
+void call_funk(op_func funk, char *string, char *val, int l_n, int tamrof)
 {
 	stack_t *node;
 	int gal;
