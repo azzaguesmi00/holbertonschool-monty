@@ -68,6 +68,5 @@ void swap_nodes(stack_t **, unsigned int);
 void errrrrr(int error_code, ...);
 void more_errrrr(int error_code, ...);
 void string_errrr(int error_code, ...);
-void rotr(stack_t **, unsigned int);
 
 #endif
