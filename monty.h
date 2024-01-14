@@ -43,8 +43,8 @@ extern stack_t *head;
 typedef void (*op_func)(stack_t **, unsigned int);
 
 /*file operations*/
-void open_file(char *file_name);
-int parse_line(char *buffer, int line_number, int format);
+void open_file(char *fnam);
+int parse_line(char *buff, int ln, int i);
 void read_file(FILE *);
 int len_chars(FILE *);
 void find_func(char *, char *, int, int);
@@ -52,14 +52,14 @@ void find_func(char *, char *, int, int);
 /*Stack operations*/
 stack_t *create_node(int n);
 void free_nodes(void);
-void print_stack(stack_t **, unsigned int);
-void add_to_stack(stack_t **, unsigned int);
+void printstak(stack_t **, unsigned int);
+void add2stak(stack_t **, unsigned int);
 void add_to_queue(stack_t **, unsigned int);
 
 void call_funk(op_func, char *, char *, int, int);
 
-void print_top(stack_t **, unsigned int);
-void pop_top(stack_t **, unsigned int);
+void toprint(stack_t **, unsigned int);
+void pop(stack_t **, unsigned int);
 void nop(stack_t **, unsigned int);
 void swap_nodes(stack_t **, unsigned int);
 
