@@ -1,8 +1,8 @@
 #include "monty.h"
 
 /**
- * open_file - opens a file
- * @fnam: the file namepath
+ * open_file - open file
+ * @fnam: the file name path
  * Return: void
  */
 
@@ -18,7 +18,7 @@ void open_file(char *fnam)
 }
 
 /**
- * read_file - reads a file
+ * read_file - read  file
  * @fdes: pointer to file descriptor
  * Return: void
  */
