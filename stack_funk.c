@@ -71,6 +71,6 @@ void pop(stack_t **stak, unsigned int linum)
 void toprint(stack_t **stak, unsigned int linum)
 {
 	if (stak == NULL || *stak == NULL)
-		more_err(6, linum);
+		more_errrrr(6, linum);
 	printf("%d\n", (*stak)->n);
 }
