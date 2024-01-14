@@ -21,61 +21,61 @@ int main(int argc, char *argv[])
 }
 
 /**
- * create_node - Creates a node.
- * @n: Number to go inside the node.
+ * create- Creates a node.
+ * @i: Number to go inside the node.
  * Return: Upon sucess a pointer to the node. Otherwise NULL.
  */
-stack_t *create_node(int n)
+stack_t *create(int i)
 {
-	stack_t *node;
+	stack_t *nod;
 
-	node = malloc(sizeof(stack_t));
-	if (node == NULL)
-		err(4);
-	node->next = NULL;
-	node->prev = NULL;
-	node->n = n;
-	return (node);
+	nod = malloc(sizeof(stack_t));
+	if (nod == NULL)
+		errrrrr(4);
+	nod->next = NULL;
+	nod->prev = NULL;
+	nod->n = i;
+	return (nod);
 }
 
 /**
- * free_nodes - Frees nodes in the stack.
+ * free - Frees nodes in the stack.
  */
-void free_nodes(void)
+void free(void)
 {
-	stack_t *tmp;
+	stack_t *sta;
 
 	if (head == NULL)
 		return;
 
 	while (head != NULL)
 	{
-		tmp = head;
+		sta = head;
 		head = head->next;
-		free(tmp);
+		free(sta);
 	}
 }
 
 /**
- * add_to_queue - Adds a node to the queue.
+ * ad2q- Adds a node to the queue.
  * @new_node: Pointer to the new node.
  * @ln: line number of the opcode.
  */
-void add_to_queue(stack_t **new_node, __attribute__((unused)) unsigned int n)
+void ad2q(stack_t **newno __attribute__((unused)) unsigned int i)
 {
-	stack_t *tmp;
+	stack_t *sta;
 
-	if (new_node == NULL || *new_node == NULL)
+	if (newno == NULL || *newno == NULL)
 		exit(EXIT_FAILURE);
 	if (head == NULL)
 	{
-		head = *new_node;
+		head = *newno;
 		return;
 	}
-	tmp = head;
-	while (tmp->next != NULL)
-		tmp = tmp->next;
+	sta = head;
+	while (sta->next != NULL)
+		sta = sta->next;
 
-	tmp->next = *new_node;
-	(*new_node)->prev = tmp;
+	sta->next = *newno;
+	(*newno)->prev = sta;
 }
