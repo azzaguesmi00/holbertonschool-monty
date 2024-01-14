@@ -50,18 +50,18 @@ int len_chars(FILE *);
 void find_func(char *, char *, int, int);
 
 /*Stack operations*/
-stack_t *create_node(int n);
-void free_nodes(void);
+stack_t *create(int i);
+void free(void);
 void printstak(stack_t **, unsigned int);
 void add2stak(stack_t **, unsigned int);
-void add_to_queue(stack_t **, unsigned int);
+void ad2q(stack_t **, unsigned int);
 
 void call_funk(op_func, char *, char *, int, int);
 
 void toprint(stack_t **, unsigned int);
 void pop(stack_t **, unsigned int);
 void nop(stack_t **, unsigned int);
-void swap_nodes(stack_t **, unsigned int);
+void swap(stack_t **, unsigned int);
 
 
 /*Error hanlding*/
