@@ -33,5 +33,5 @@ void read_file(FILE *fdes)
 	{
 		fm = parse_line(bufff, ln, fm);
 	}
-	free(bufff);
+	free();
 }
