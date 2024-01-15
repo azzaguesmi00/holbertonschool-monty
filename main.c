@@ -50,9 +50,9 @@ void free(void)
 
 	while (head != NULL)
 	{
-		sta = head;
+		stak = head;
 		head = head->next;
-		free(stak);
+		free();
 	}
 }
 
