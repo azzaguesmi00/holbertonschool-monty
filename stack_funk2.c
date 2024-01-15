@@ -48,6 +48,6 @@ void add(stack_t **stak, unsigned int linum)
 	(*stak) = (*stak)->next;
 	all = (*stak)->n + (*stak)->prev->n;
 	(*stak)->n = all;
-	free((*stak)->prev);
+	free();
 	(*stak)->prev = NULL;
 }
