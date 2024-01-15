@@ -61,7 +61,7 @@ void free(void)
  * @new_node: Pointer to the new node.
  * @ln: line number of the opcode.
  */
-void ad2q(stack_t **newno __attribute__((unused)) unsigned int i)
+void addq(stack_t **newno __attribute__((unused)) unsigned int i)
 {
 	stack_t *sta;
 
