@@ -15,12 +15,12 @@ void find_func(char *opc, char *val, int l_n, int tamrof)
 	int gal;
 
 	instruction_t func_list[] = {
-		{"push", add_to_stack},
-		{"pall", print_stack},
-		{"pint", print_top},
-		{"pop", pop_top},
+		{"push", add2stak},
+		{"pall", printstak},
+		{"pint", toprint},
+		{"pop", pop},
 		{"nop", nop},
-		{"swap", swap_nodes},
+		{"swap", swap},
 		{NULL, NULL}};
 
 	if (opc[0] == '#')
