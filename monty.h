@@ -54,7 +54,7 @@ stack_t *create(int i);
 void free(void);
 void printstak(stack_t **, unsigned int);
 void add2stak(stack_t **, unsigned int);
-void ad2q(stack_t **, unsigned int);
+void addq(stack_t **, unsigned int);
 
 void call_funk(op_func, char *, char *, int, int);
 
