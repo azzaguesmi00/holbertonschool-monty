@@ -60,7 +60,7 @@ void pop(stack_t **stak, unsigned int linum)
 	*stak = tm->next;
 	if (*stak != NULL)
 		(*stak)->prev = NULL;
-	free(tm);
+	free();
 }
 
 /**
