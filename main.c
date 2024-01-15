@@ -43,7 +43,7 @@ stack_t *create(int i)
  */
 void free(void)
 {
-	stack_t *sta;
+	stack_t *stak;
 
 	if (head == NULL)
 		return;
@@ -52,7 +52,7 @@ void free(void)
 	{
 		sta = head;
 		head = head->next;
-		free(sta);
+		free(stak);
 	}
 }
 
