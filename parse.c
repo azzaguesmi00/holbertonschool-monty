@@ -16,7 +16,7 @@ int parse_line(char *buff, int ln, int i)
     const char *c = "\n ";
 
     if (buff == NULL)
-        err(4);
+        errrrrr(4);
 
     opc = strtok(buff, c);
     if (opc == NULL)
