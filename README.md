@@ -33,9 +33,6 @@ toprint.c: Prints the top element of the stack.
 Getting Started
 To get started with the Monty project, follow these steps:
 
-Clone the repository:
-
-git clone https://github.com/sachihiroo/holbertonschool-monty.git
 Build the Monty interpreter:
 
 gcc -Wall -Werror -Wextra -pedantic *.c -o monty
