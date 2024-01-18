@@ -43,9 +43,9 @@ extern stack_t *head;
 typedef void (*op_func)(stack_t **, unsigned int);
 
 /*file operations*/
-void open(char *fnam);
+void openfun(char *fnam);
 int parse_line(char *buff, int ln, int i);
-void read(FILE *fdes);
+void read__fun(FILE *fdes);
 void find_func(char *, char *, int, int);
 void call_funk(op_func, char *, char *, int, int);
 
