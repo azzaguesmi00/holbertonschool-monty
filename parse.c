@@ -12,7 +12,7 @@
 char *parse_line(char *buff, int ln)
 {
 	char *opc, *val;
-	const char *c = "\n ";
+	 char *c = "\n ";
 
 	if (buff == NULL)
 	{
