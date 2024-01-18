@@ -47,15 +47,15 @@ void open(char *fnam);
 int parse_line(char *buff, int ln, int i);
 void read(FILE *);;
 void find_func(char *, char *, int, int);
+void call_funk(op_func, char *, char *, int, int);
 
 /*Stack operations*/
 stack_t *create(int i);
-void free(void);
+void free();
 void printstak(stack_t **, unsigned int);
 void add2stak(stack_t **, unsigned int);
 void addq(stack_t **newno, unsigned int);
 
-void call_funk(op_func, char *, char *, int, int);
 
 void toprint(stack_t **, unsigned int);
 void pop(stack_t **, unsigned int);
