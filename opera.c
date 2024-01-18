@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * open_file - open file
+ * open - open file
  * @fnam: the file name path
  * Return: void
  */
 
-void open_file(char *fnam)
+void open(char *fnam)
 {
 	FILE *fdes = fopen(fnam, "r");
 
@@ -18,12 +18,12 @@ void open_file(char *fnam)
 }
 
 /**
- * read_file - read  file
+ * read - read  file
  * @fdes: pointer to file descriptor
  * Return: void
  */
 
-void read_file(FILE *fdes)
+void read(FILE *fdes)
 {
 	int ln, fm = 0;
 	char *bufff = NULL;
@@ -33,5 +33,5 @@ void read_file(FILE *fdes)
 	{
 		fm = parse_line(bufff, ln, fm);
 	}
-	free();
+	free(fdes);
 }
