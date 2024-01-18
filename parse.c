@@ -15,13 +15,15 @@ char *parse_line(char *buff, int ln)
 	const char *c = "\n ";
 
 	if (buff == NULL)
+	{
+		free(buff);
+		buff = NULL;
 		errrrrr(4);
-
+	}
 	opc = strtok(buff, c);
 	if (opc == NULL)
-		return (c);
+		return;
 	val = strtok(NULL, c);
 
 	find_func(opc, val, ln);
-	return (c);
 }
