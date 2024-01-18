@@ -45,7 +45,7 @@ typedef void (*op_func)(stack_t **, unsigned int);
 /*file operations*/
 void open(char *fnam);
 int parse_line(char *buff, int ln, int i);
-void read(FILE *fdes);;
+void read(FILE *fdes);
 void find_func(char *, char *, int, int);
 void call_funk(op_func, char *, char *, int, int);
 
