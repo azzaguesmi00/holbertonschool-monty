@@ -42,7 +42,7 @@ void errrrrr(int error_code, ...)
 	default:
 		break;
 	}
-	free_nodes();
+	freenode();
 	exit(EXIT_FAILURE);
 }
 
@@ -83,6 +83,6 @@ void more_errrrr(int error_code, ...)
 	default:
 		break;
 	}
-	free_nodes();
+	freenode();
 	exit(EXIT_FAILURE);
 }
