@@ -31,7 +31,7 @@ void read_fun(FILE *fdes)
 
 	for (ln = 1; getline(&bufff, &leng, fdes) != -1; ln++)
 	{
-		fm = parse_line(bufff, ln, fm);
+		fm = parse_line(bufff, ln);
 	}
 	free(fdes);
 }
