@@ -51,7 +51,7 @@ void call_funk(op_func, char *, char *, int, int);
 
 /*Stack operations*/
 stack_t *create(int i);
-void free();
+void freenode(void);
 void printstak(stack_t **, unsigned int);
 void add2stak(stack_t **, unsigned int);
 void addq(stack_t **newno, unsigned int);
