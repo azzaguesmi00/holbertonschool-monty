@@ -1,15 +1,16 @@
 #include "monty.h"
 
+stack_t *create(int n);
+
 /**
  * find_func - find the appropriate function for the opcode
  * @opc: opcode
  * @val: argument of opcode
- * @tamrof:  storage format. If 0 Nodes will be entered as a stack.
  * @l_n: line number
  * if 1 nodes will be entered as a queue.
  * Return: void
  */
-void find_func(char *opc, char *val, int l_n, int tamrof)
+void find_func(char *opc, char *val, int l_n)
 {
 	int n;
 	int gal;
@@ -43,7 +44,6 @@ void find_func(char *opc, char *val, int l_n, int tamrof)
  * @string: string representing the opcode.
  * @val: string representing a numeric value.
  * @l_n: line numeber for the instruction.
- * @tamrof: Format specifier. If 0 Nodes will be entered as a stack.
  * if 1 nodes will be entered as a queue.
  */
 void call_funk(op_func funk, char *string, char *val, int l_n)
