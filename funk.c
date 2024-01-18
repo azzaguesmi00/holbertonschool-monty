@@ -15,9 +15,9 @@ void find_func(char *opc, char *val, int l_n, int tamrof)
 	int gal;
 
 	instruction_t func_list[] = {
-		{"push", add2stak},
+		{"push", adds},
 		{"pall", printstak},
-		{"pint", toprint},
+		{"pint", pint},
 		{"pop", pop},
 		{"nop", nop},
 		{"swap", swap},
@@ -68,10 +68,9 @@ void call_funk(op_func funk, char *string, char *val, int l_n, int tamrof)
 				errrrrr(5, l_n);
 		}
 		node = create(atoi(val) * gal);
-		if (tamrof == 0)
+		
 			funk(&node, l_n);
-		if (tamrof == 1)
-			addq(&node, l_n);
+		
 	}
 	else
 		funk(&head, l_n);
