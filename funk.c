@@ -30,7 +30,7 @@ void find_func(char *opc, char *val, int l_n, int tamrof)
 	{
 		if (strcmp(opc, func_list[n].opcode) == 0)
 		{
-			call_funk(func_list[n].f, opc, val, l_n, tamrof);
+			call_funk(func_list[n].f, opc, val, l_n);
 		}
 	}
 	if (gal == 1)
@@ -46,7 +46,7 @@ void find_func(char *opc, char *val, int l_n, int tamrof)
  * @tamrof: Format specifier. If 0 Nodes will be entered as a stack.
  * if 1 nodes will be entered as a queue.
  */
-void call_funk(op_func funk, char *string, char *val, int l_n, int tormaf)
+void call_funk(op_func funk, char *string, char *val, int l_n)
 {
 	stack_t *node;
 	int gal;
