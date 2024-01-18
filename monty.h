@@ -43,10 +43,9 @@ extern stack_t *head;
 typedef void (*op_func)(stack_t **, unsigned int);
 
 /*file operations*/
-void open_file(char *fnam);
+void open(char *fnam);
 int parse_line(char *buff, int ln, int i);
-void read_file(FILE *);
-int len_chars(FILE *);
+void read(FILE *);;
 void find_func(char *, char *, int, int);
 
 /*Stack operations*/
@@ -54,7 +53,7 @@ stack_t *create(int i);
 void free(void);
 void printstak(stack_t **, unsigned int);
 void add2stak(stack_t **, unsigned int);
-void addq(stack_t **, unsigned int);
+void addq(stack_t **newno, unsigned int);
 
 void call_funk(op_func, char *, char *, int, int);
 
@@ -67,6 +66,6 @@ void swap(stack_t **, unsigned int);
 /*Error hanlding*/
 void errrrrr(int error_code, ...);
 void more_errrrr(int error_code, ...);
-void string_errrr(int error_code, ...);
+
 
 #endif
