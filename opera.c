@@ -25,13 +25,13 @@ void openfun(char *fnam)
 
 void read_fun(FILE *fdes)
 {
-	int ln, fm = 0;
+	int ln = 0;
 	char *bufff = NULL;
 	size_t leng = 0;
 
 	for (ln = 1; getline(&bufff, &leng, fdes) != -1; ln++)
 	{
-		fm = parse_line(bufff, ln);
+		char *fm = parse_line(bufff, ln);
 	}
 	free(fdes);
 }
