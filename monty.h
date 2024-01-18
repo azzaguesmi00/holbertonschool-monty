@@ -44,12 +44,13 @@ typedef void (*op_func)(stack_t **, unsigned int);
 
 /*file operations*/
 void openfun(char *fnam);
-const char parse_line(char *buff, int ln, int i);
-void read__fun(FILE *fdes);
+char *parse_line(char *buff, int ln, int i);
+void read_fun(FILE *fdes);
 void find_func(char *, char *, int, int);
-void call_funk(op_func, char *, char *, int, int);
+void call_funk(op_func funk, char *string, char *val, int l_n);
 
 /*Stack operations*/
+stack_t *create(int n);
 stack_t *createnode(int i);
 void freenode(void);
 void printstak(stack_t **, unsigned int);
