@@ -1,29 +1,29 @@
 #include "monty.h"
 
 /**
- * open - open file
+ * openfun - open file
  * @fnam: the file name path
  * Return: void
  */
 
-void open(char *fnam)
+void openfun(char *fnam)
 {
 	FILE *fdes = fopen(fnam, "r");
 
 	if (fnam == NULL || fdes == NULL)
 		errrrrr(2, fnam);
 
-	read_file(fdes);
+	read_fun(fdes);
 	fclose(fdes);
 }
 
 /**
- * read - read  file
+ * read__fun - read  file
  * @fdes: pointer to file descriptor
  * Return: void
  */
 
-void read(FILE *fdes)
+void read_fun(FILE *fdes)
 {
 	int ln, fm = 0;
 	char *bufff = NULL;
