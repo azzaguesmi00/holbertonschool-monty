@@ -10,7 +10,7 @@
  * Return: Returns 0 if the opcode is stack. 1 if queue.
  */
 
-int parse_line(char *buff, int ln, int i)
+const char parse_line(char *buff, int ln, int i)
 {
     char *opc, *val;
     const char *c = "\n ";
