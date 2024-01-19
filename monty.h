@@ -69,4 +69,6 @@ void errrrrr(int error_code, ...);
 void more_errrrr(int error_code, ...);
 
 
+stack_t *head;
+
 #endif
