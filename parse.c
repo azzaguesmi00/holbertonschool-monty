@@ -21,9 +21,9 @@ char *parse_line(char *buff, int ln)
 		errrrrr(4);
 	}
 	opc = strtok(buff, c);
-	if (opc == NULL)
-		return;
-	val = strtok(NULL, c);
+	if (opc != NULL)
+		val = strtok(NULL, c);
 
 	find_func(opc, val, ln);
+	return(opc);
 }
