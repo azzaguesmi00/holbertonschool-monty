@@ -10,13 +10,15 @@ void adds(stack_t **new, __attribute__((unused))unsigned int ln)
 
 	if (new == NULL || *new == NULL)
 		exit(EXIT_FAILURE);
-	if (ln == NULL)
-	{
-		ln = *new;
-		return;
-	}
-	tm = ln;
-	ln = *new;
-	tm->next = tm;
-	tm->prev = ln;
+	 if (*new == NULL)
+    {
+        // Handle the case where the stack is empty
+        fprintf(stderr, "L%d: can't add, stack too short\n", ln);
+        exit(EXIT_FAILURE);
+    }
+
+    tm = *new;
+    tm->next = *new;
+    tm->prev = NULL;
+    *new = tm;
 }
