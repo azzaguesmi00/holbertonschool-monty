@@ -73,5 +73,5 @@ void call_funk(op_func funk, char *string, char *val, int l_n)
 		
 	}
 	else
-		funk(&head, l_n);
+		funk(&node, l_n);
 }
